@@ -71,16 +71,16 @@
 					<ul class="menu">
 						<li class="dropdown dropdown-2">
 							HOME
-							<ul class="dropdown_menu dropdown_menu-2">
+							<!-- <ul class="dropdown_menu dropdown_menu-2">
 								<li class="dropdown_item-1">Item 1</li>
 								<li class="dropdown_item-2">Item 2</li>
 								<li class="dropdown_item-3">Item 3</li>
 								<li class="dropdown_item-4">Item 4</li>
 								<li class="dropdown_item-5">Item 5</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="dropdown dropdown-2">
-							UPCOMING EVENTS
+							UPCOMING EVENTS<i class="fas fa-sort-down"></i>
 							<ul class="dropdown_menu dropdown_menu-2">
 								<li class="dropdown_item-1">Item 1</li>
 								<li class="dropdown_item-2">Item 2</li>
@@ -89,24 +89,12 @@
 								<li class="dropdown_item-5">Item 5</li>
 							</ul>
 						</li>
-						<li class="dropdown dropdown-2">
-							ABOUT US
-							<ul class="dropdown_menu dropdown_menu-2">
-								<li class="dropdown_item-1">Item 1</li>
-								<li class="dropdown_item-2">Item 2</li>
-								<li class="dropdown_item-3">Item 3</li>
-								<li class="dropdown_item-4">Item 4</li>
-								<li class="dropdown_item-5">Item 5</li>
-							</ul>
-						</li>
+						<li class="dropdown dropdown-2">ABOUT US</li>
 						<li class="dropdown dropdown-2">
 							CONTACT US
 							<ul class="dropdown_menu dropdown_menu-2">
 								<li class="dropdown_item-1">Item 1</li>
 								<li class="dropdown_item-2">Item 2</li>
-								<li class="dropdown_item-3">Item 3</li>
-								<li class="dropdown_item-4">Item 4</li>
-								<li class="dropdown_item-5">Item 5</li>
 							</ul>
 						</li>
 					</ul>
@@ -115,18 +103,26 @@
 				</nav>
 			</div>
 		</div>
-		<!--    Second Navbar Code End-->
+		<!--     Navbar Code End-->
 		<div class="pages-container-main">
 			<div class="page-container">
 				<div class="pages page1">
-					<img src="/img/Universal-Humanity-Flag-of-Peace.jpg" alt="pic1" />
-					<div class="slider-content">
-						<h1 class="slider-heading-text">
-							धर्म न जात <br />सिर्फ मानवता की बात
-						</h1>
-						<p class="">
-							आओ वसुधैव कुटुंबकम् के साथी बनें,हिंदराष्‍ट्र संघ के साथ जुड़ें
-						</p>
+					<div class="page-slider">
+						<div class="image-container">
+							<img
+								src="./img/Universal-Humanity-Flag-of-Peace.jpg"
+								alt="pic1"
+							/>
+							<img src="./img/symble.png" alt="pic2" />
+						</div>
+						<div class="slider-content">
+							<p class="slider-heading-text">
+								धर्म न जात <span>सिर्फ मानवता की बात</span>
+							</p>
+							<!-- <p class="">
+								आओ वसुधैव कुटुंबकम् के साथी बनें,हिंदराष्‍ट्र संघ के साथ जुड़ें
+							</p> -->
+						</div>
 						<a class="learn-more" href="">
 							Learn More
 
@@ -144,5 +140,21 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			window.onscroll = function () {
+				myFunction();
+			};
+
+			var navbar = document.getElementsByClassName("header--nav--main");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
 	</body>
 </html>
