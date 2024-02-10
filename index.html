@@ -103,6 +103,7 @@
 			</div>
 		</div>
 		<!--     Navbar Code End-->
+		<!-- main Page container start-->
 		<div class="pages-container-main">
 			<div class="page-container">
 				<div class="pages page1">
@@ -139,21 +140,9 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			window.onscroll = function () {
-				myFunction();
-			};
+		<!-- main Page container end-->
 
-			var navbar = document.getElementsByClassName("header--nav--main");
-			var sticky = navbar.offsetTop;
-
-			function myFunction() {
-				if (window.pageYOffset >= sticky) {
-					navbar.classList.add("sticky");
-				} else {
-					navbar.classList.remove("sticky");
-				}
-			}
-		</script>
+		<script src="./script.js" type="text/javascript"></script>
+		/>
 	</body>
 </html>

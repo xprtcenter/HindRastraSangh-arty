@@ -218,16 +218,9 @@ i {
 .header--nav--main nav > span:hover {
 	background-color: var(--buff3);
 }
-.header--nav--main .menu li {
-	font-family: roboto condensed, sans-serif;
-	font-weight: 700;
-	font-size: 16px;
-	transition: 0.3s color;
-	line-height: 25px;
-	color: white;
-}
+
 .header--nav--main .website-logo img {
-	width: 250px;
+	width: calc(150px + 6vw);
 }
 
 nav {
@@ -242,11 +235,15 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-weight: 600;
 	position: relative;
-	font-size: 18px;
 	perspective: 1000px;
 	z-index: 100;
+	font-family: roboto condensed, sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	transition: 0.3s color;
+	line-height: 25px;
+	color: white;
 }
 
 .dropdown i.fa-sort-down {
@@ -254,8 +251,12 @@ nav {
 	margin-bottom: 10px;
 	margin-left: 5px;
 }
+.dropdown:hover i.fa-sort-down {
+	color: #ff5353 !important;
+}
 .dropdown:hover {
 	cursor: pointer;
+	color: #ff5353 !important;
 }
 .dropdown:hover .dropdown_menu li {
 	display: block;
