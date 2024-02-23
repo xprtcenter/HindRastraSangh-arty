@@ -2,13 +2,16 @@ window.onscroll = function () {
 	myFunction();
 };
 
-var navbar = document.getElementsByClassName("header--nav--main");
-var sticky = navbar.offsetTop;
+var navbar = document.getElementById("sticky-nav");
+var mainpage = document.getElementsByClassName("pages-container-main");
+var sticky = window.pageYOffset;
+var topnav = document.getElementsByClassName("header--nav--top");
 
 function myFunction() {
-	if (window.pageYOffset >= sticky) {
-		navbar.classList.add("sticky");
+	if (sticky >= 0) {
+		topnav.style.display("none");
 	} else {
-		navbar.classList.remove("sticky");
+		topnav.style.display("flex");
 	}
 }
+console.log(sticky);

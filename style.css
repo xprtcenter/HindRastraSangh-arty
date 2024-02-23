@@ -1,435 +1,104 @@
-/* Reset Code */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+body {
+	position: relative;
+	width: 100vw;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol,
-ul {
-	list-style: none;
-}
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Reset Code End */
-
-/* CSS HEX */
-:root {
-	--blue1: #0c63a4ff;
-	--tan1: #edb882ff;
-	--gray: #e5edf3ff;
-
-	--blue2: #347db4ff;
-	--blue3: rgb(3, 57, 99);
-	--blue: #79a3bdff;
-	--blue4: #0460a1ff;
-	--black-shadow: rgb(21, 27, 29);
-	--white-mix: rgb(221, 221, 221);
-
-	/* CSS HEX */
-	--buff: #edb882ff;
-	--buff2: rgb(230, 77, 7);
-	--buff3: rgb(204, 66, 2);
-	--alice-blue: #e5edf3ff;
-	--steel-blue: #347db4ff;
-	--lapis-lazuli: #0460a1ff;
-	--ash-gray: #bdbca8ff;
-	--carolina-blue: #84a9c5ff;
-
-	box-sizing: border-box;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.menu-container {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	width: 100vw;
-	background: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0.829),
-		rgba(255, 255, 255, 0.178),
-		rgba(255, 255, 255, 0)
-	);
-}
-.header--nav--top {
-	display: flex;
-	justify-content: space-between;
-	padding: 1vh 2vw;
-}
-
-.header--nav--top--right,
-.header--nav--top--left small,
-i {
-	color: var(--white-mix);
-}
-.social-icon {
-	display: inline-block;
-	padding: 0.3rem;
-
-	text-align: center;
-	border-radius: 5px;
-	margin: auto;
-}
-
-.social-icon:hover {
-	background-color: var(--blue1);
-}
-.header--nav--main {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 2rem;
-	font-family: roboto condensed, sans-serif;
-	font-weight: 700;
-	font-size: 16px;
-	transition: 0.3s color;
-	line-height: 25px;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-.header--nav--main nav {
-	display: flex;
-	justify-content: end;
-	align-items: center;
-}
-.header--nav--main nav > span {
-	padding: 0.6rem 1rem;
-	background-color: var(--buff2);
-	margin: 0 0.3rem;
-	border-radius: 0.5rem;
-	color: white;
-	cursor: pointer;
-}
-.header--nav--main nav > span:hover {
-	background-color: var(--buff3);
-}
-
-.header--nav--main .website-logo img {
-	width: calc(150px + 6vw);
-}
-
-nav {
-	width: 100%;
-}
-.menu {
-	display: flex;
-	justify-content: flex-end;
-}
-.dropdown {
-	padding: 10px 22px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	perspective: 1000px;
-	z-index: 100;
-	font-family: roboto condensed, sans-serif;
-	font-weight: 700;
-	font-size: 16px;
-	transition: 0.3s color;
-	line-height: 25px;
-	color: white;
-}
-
-.dropdown i.fa-sort-down {
-	font-size: 1.5rem;
-	margin-bottom: 10px;
-	margin-left: 5px;
-}
-.dropdown:hover i.fa-sort-down {
-	color: #ff5353 !important;
-}
-.dropdown:hover {
-	cursor: pointer;
-	color: #ff5353 !important;
-}
-.dropdown:hover .dropdown_menu li {
-	display: block;
-	color: #0460a1;
-}
-.dropdown_menu {
-	position: fixed;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	perspective: 1000px;
-	z-index: 100;
-}
-.dropdown_menu li {
-	display: none;
-	background-color: rgb(255, 255, 255);
-	padding: 10px 20px;
-	font-size: 16px;
-	opacity: 0;
-}
-
-.dropdown_menu li:hover {
-	color: #fff !important;
-	background-color: var(--blue2);
-}
-/* .dropdown:hover .dropdown_menu--animated {
-	display: block;
-}
-.dropdown_menu--animated {
-	display: none;
-}
-.dropdown_menu--animated li {
-	display: block;
-	opacity: 1;
-} */
-
-.dropdown_menu-2 .dropdown_item-1 {
-	transform-origin: top center;
-	animation: rotateX 300ms 60ms ease-in-out forwards;
-}
-.dropdown_menu-2 .dropdown_item-2 {
-	transform-origin: top center;
-	animation: rotateX 300ms 120ms ease-in-out forwards;
-}
-.dropdown_menu-2 .dropdown_item-3 {
-	transform-origin: top center;
-	animation: rotateX 300ms 180ms ease-in-out forwards;
-}
-.dropdown_menu-2 .dropdown_item-4 {
-	transform-origin: top center;
-	animation: rotateX 300ms 240ms ease-in-out forwards;
-}
-.dropdown_menu-2 .dropdown_item-5 {
-	transform-origin: top center;
-	animation: rotateX 300ms 300ms ease-in-out forwards;
-}
-@-moz-keyframes rotateX {
-	0% {
-		opacity: 0;
-		transform: rotateX(-90deg);
-	}
-	50% {
-		transform: rotateX(-20deg);
-	}
-	100% {
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
-}
-@-webkit-keyframes rotateX {
-	0% {
-		opacity: 0;
-		transform: rotateX(-90deg);
-	}
-	50% {
-		transform: rotateX(-20deg);
-	}
-	100% {
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
-}
-@-o-keyframes rotateX {
-	0% {
-		opacity: 0;
-		transform: rotateX(-90deg);
-	}
-	50% {
-		transform: rotateX(-20deg);
-	}
-	100% {
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
-}
-@keyframes rotateX {
-	0% {
-		opacity: 0;
-		transform: rotateX(-90deg);
-	}
-	50% {
-		transform: rotateX(-20deg);
-	}
-	100% {
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
-}
-/* .header--nav--main--right--content a {
-	align-self: baseline;
-	padding: 0.5rem 0.8rem;
-	text-decoration: none;
-	color: #186babff;
-	font-size: 1.3rem;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-} */
-
 /* page paralex efeect */
-.page-container-main {
+.page-container {
 	width: 100%;
 	height: 100vh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
+	scrollbar-width: none;
 }
 .pages {
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 50px;
 	scroll-snap-align: start;
 }
 
-.pages img {
-	width: 350px;
+.page1 {
+	display: flex;
+	justify-content: center;
+	/* background: linear-gradient(180deg, #0271c1, #f9b55c); */
+	background-image: url(./img/bg.jpeg);
 }
 
-.page1 {
-	background: linear-gradient(180deg, #0460a1, var(--buff));
-}
-.page2 {
-	background: linear-gradient(454deg, #404c80, #e64c04);
-}
-.page3 {
-	background: linear-gradient(454deg, #9574ff, #ff5353);
-}
 /* page paralex efeect end */
 .page-slider {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 60vh;
-	color: white;
+	/* color: white; */
 	width: 80vw;
+
+	position: relative;
 }
 .page-slider .image-container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	margin-top: 100px;
 	width: 100%;
-	height: 50vh;
+	height: 45vh;
+	padding: 0 70px;
+	animation: fadeIn 3s;
+	transform: translate(0, 10vh);
 }
 .page-slider .image-container img {
 	height: 80%;
 	width: auto;
+	margin-top: 5%;
 }
-.page-slider .slider-content > p {
-	font-size: 5rem;
+.page-slider .image-container img:last-of-type {
+	height: 110%;
+	width: auto;
+	margin: 0 50px 0 0;
+}
+.slider-content {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 40%;
+	animation: fadeIn 3s;
+	transform: translate(0, 10vh);
+	animation-delay: 2s;
+}
+.slider-heading-text-1 {
+	font-size: 6rem;
 	font-weight: 900;
-	text-shadow: 2px 2px #0b0707;
+	text-shadow: 4px 4px #0b0707;
+	color: white;
 }
-.page-slider .slider-content > p > span {
-	color: var(--blue4);
+.slider-heading-text-2 {
+	font-size: 3rem;
+	font-weight: 900;
+	text-shadow: 4px 4px #0c0a00;
+	color: rgb(250, 161, 27);
+}
+.slider-heading-text-3 {
+	font-size: 9rem;
+	font-weight: 900;
+	text-shadow: 4px 4px #000305;
+	color: rgb(5, 86, 199);
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translate(0, 20vh);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 10vh);
+	}
+}
+
+.page2 {
+	background: linear-gradient(454deg, #404c80, #e64c04);
+}
+.page3 {
+	background: linear-gradient(454deg, #9574ff, #ff5353);
 }
