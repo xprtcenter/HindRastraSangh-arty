@@ -13,6 +13,16 @@
 		color: white;
 	}
 
+	.header--nav--main .menu {
+		position: absolute;
+		background-color: rgb(86, 157, 220);
+		top: 60px;
+		display: flex;
+		flex-direction: column;
+	}
+	.header--nav--main .menu li {
+		display: block;
+	}
 	/* page paralex efeect end */
 	.page-slider {
 		display: flex;
