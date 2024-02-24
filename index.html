@@ -41,8 +41,8 @@
 
 				/* CSS HEX */
 				--buff: rgb(255, 189, 122);
-				--buff2: #f3a960;
-				--buff3: #f3810f;
+				--buff3: #f3a960;
+				--buff2: #f3810f;
 				--alice-blue: #e5edf3ff;
 				--steel-blue: #347db4ff;
 				--lapis-lazuli: #0460a1ff;
@@ -97,8 +97,8 @@
 					></a>
 
 					<select name="language" id="language">
-						<option value="English">English</option>
 						<option value="Hindi">हिन्दी</option>
+						<option value="English">English</option>
 					</select>
 				</div>
 			</div>
@@ -107,38 +107,40 @@
 				<a href="index.html" class="website-logo">
 					<img src="./img/flag_name_white.png" alt="logo" />
 				</a>
-				<nav>
+				<a
+					href="javascript:void(0);"
+					class="burger-icon"
+					onclick="myBurgerbutton()"
+				>
+					<i class="fa fa-bars"></i>
+				</a>
+				<nav id="Navbar-menu">
 					<ul class="menu">
+						<li class="dropdown dropdown-2">प्रथम पृष्ठ</li>
 						<li class="dropdown dropdown-2">
-							HOME
-							<!-- <ul class="dropdown_menu dropdown_menu-2">
-							<li class="dropdown_item-1">Item 1</li>
-							<li class="dropdown_item-2">Item 2</li>
-							<li class="dropdown_item-3">Item 3</li>
-							<li class="dropdown_item-4">Item 4</li>
-							<li class="dropdown_item-5">Item 5</li>
-						</ul> -->
-						</li>
-						<li class="dropdown dropdown-2">
-							UPCOMING EVENTS<i class="fas fa-sort-down"></i>
+							हमारे बारे में<i class="fas fa-sort-down"></i>
 							<ul class="dropdown_menu dropdown_menu-2">
-								<li class="dropdown_item-1">Item 1</li>
-								<li class="dropdown_item-2">Item 2</li>
-								<li class="dropdown_item-3">Item 3</li>
-								<li class="dropdown_item-4">Item 4</li>
-								<li class="dropdown_item-5">Item 5</li>
+								<li class="dropdown_item-1">हिंदराष्‍ट्र संघ</li>
+								<li class="dropdown_item-2">राष्‍ट्रीय अध्‍यक्ष</li>
+								<li class="dropdown_item-3">राष्‍ट्रीय कार्यकारणी</li>
+								<li class="dropdown_item-4">हिंदराष्‍ट्र संघ न्‍याय समिति</li>
+								<li class="dropdown_item-5">प्रांतीय कार्यकारणी</li>
 							</ul>
 						</li>
-						<li class="dropdown dropdown-2">ABOUT US</li>
 						<li class="dropdown dropdown-2">
-							CONTACT US
+							हिंदराष्‍ट्र मीडिया<i class="fas fa-sort-down"></i>
 							<ul class="dropdown_menu dropdown_menu-2">
-								<li class="dropdown_item-1">Item 1</li>
+								<li class="dropdown_item-1">प्रेस विज्ञप्तियां</li>
+								<li class="dropdown_item-2">फोटो गैलरी</li>
+								<li class="dropdown_item-3">इंटरव्‍यू/भाषण</li>
+								<li class="dropdown_item-4">वीडियो गैलरी</li>
 							</ul>
 						</li>
+						<li class="dropdown">आगामी कार्यक्रम</li>
+						<li class="dropdown">एचआरएस लाइव</li>
 					</ul>
-					<span>JOIN HSP</span>
-					<span>MAKE A DONATION</span>
+					<span>ऑनलाइन सदस्यता</span>
+					<span>सहयोग दें</span>
 				</nav>
 			</div>
 		</div>

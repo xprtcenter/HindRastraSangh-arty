@@ -70,9 +70,10 @@
 	width: 97%;
 	align-items: center;
 }
-/* .header--nav--main a {
-	width: calc(150px + 6vw);
-} */
+.header--nav--main .burger-icon {
+	display: none;
+	font-size: 2rem;
+}
 .header--nav--main a img {
 	width: calc(150px + 6vw);
 }
