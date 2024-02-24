@@ -34,11 +34,7 @@
 		animation: fadeIn 3s;
 		transform: translate(0, 10vh);
 	}
-	.page-slider .image-container img {
-		/* height: 40%;
-		width: auto;
-		margin-top: 5%; */
-	}
+
 	.page-slider .image-container img:first-of-type {
 		height: 40%;
 		width: auto;
@@ -50,15 +46,7 @@
 		width: auto;
 		margin: 2vh;
 	}
-	.slider-content {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		top: 40%;
-		align-items: center;
-		/* transform: translateY(100%); */
-		animation: fadeIn 5s ease-in;
-	}
+
 	.slider-heading-text-1 {
 		font-size: 4rem;
 		font-weight: 900;

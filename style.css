@@ -81,7 +81,7 @@ body {
 	font-size: 9rem;
 	font-weight: 900;
 	text-shadow: 4px 4px #000305;
-	color: rgb(5, 86, 199);
+	color: var(--blue2);
 }
 @keyframes fadeIn {
 	0% {
