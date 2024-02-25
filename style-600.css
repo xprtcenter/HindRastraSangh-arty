@@ -7,21 +7,32 @@
 	}
 	.header--nav--main {
 		margin: 4vw;
+		align-items: flex-start;
+		position: relative;
 	}
 	.header--nav--main nav {
 		display: none;
+		justify-content: flex-start;
+		position: absolute;
+		top: 15vw;
+		width: 100vw;
+	}
+	.header--nav--main nav .menu .dropdown {
+		padding: 15px 100px;
 	}
 	.header--nav--main .burger-icon {
 		display: block;
 		color: white;
 	}
 
-	.header--nav--main .menu {
-		position: absolute;
-		background-color: rgb(86, 157, 220);
-		top: 60px;
+	.header--nav--main .mobile-menu-on {
 		display: flex;
 		flex-direction: column;
+		gap: 25px;
+		& .menu {
+			flex-direction: column;
+			background-color: var(--blue);
+		}
 	}
 	.header--nav--main .menu li {
 		display: block;
@@ -78,5 +89,8 @@
 		font-weight: 900;
 		text-shadow: 4px 4px #000305;
 		color: rgb(5, 86, 199);
+	}
+	.page3 img {
+		background-position: center;
 	}
 }

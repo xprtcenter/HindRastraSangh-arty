@@ -17,9 +17,9 @@ function myFunction() {
 console.log(sticky);
 function myBurgerbutton() {
 	var x = document.getElementById("Navbar-menu");
-	if (x.style.display === "block") {
-		x.style.display = "none";
+	if (x.className === "mobile-menu-on") {
+		x.className = "mobile-menu-off";
 	} else {
-		x.style.display = "block";
+		x.className = "mobile-menu-on";
 	}
 }

@@ -139,6 +139,9 @@
 	display: block;
 	color: #0460a1;
 }
+.header--nav--main nav .menu .dropdown:hover .dropdown_menu li a {
+	color: #0460a1;
+}
 .header--nav--main nav .menu .dropdown .dropdown_menu {
 	position: fixed;
 	top: 100%;
@@ -156,8 +159,10 @@
 }
 
 .header--nav--main nav .menu .dropdown .dropdown_menu li:hover {
-	color: #fff !important;
 	background-color: var(--blue2);
+	& a {
+		color: #fff !important;
+	}
 }
 
 .header--nav--main nav .menu .dropdown .dropdown_menu-2 .dropdown_item-1 {
